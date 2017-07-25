@@ -4,6 +4,7 @@ const app = express()
 const axios = require('axios')
 
 app.get('/', async function (req, res) {
+	console.log('incoming http request....')
   axios({
     method: 'get',
     url: 'https://www.reddit.com/r/mlbstreams/search.json?q=red+sox&restrict_sr=on',
